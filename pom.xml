@@ -64,8 +64,12 @@
   </build>
   <distributionManagement>
     <repository>
-  <id>maven-releases</id>
-  <url>http://34.207.222.229:8081/repository/maven-releases/</url>
+  <id>sample-release</id>
+  <url>http://13.232.224.64:8081/repository/sample-release/</url>
 </repository>
+    <snapshotRepository>
+      <id>sample-snapshot</id>
+      <url>http://13.232.224.64:8081/repository/sample-snapshot/</url>
+    </snapshotRepository>
   </distributionManagement>
 </project>
