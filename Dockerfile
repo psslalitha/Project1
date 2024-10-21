@@ -1,6 +1,11 @@
+# Start from a base image
 FROM tomcat
-MAINTAINER prashanth
-RUN apt update
-COPY target/devops.war /usr/local/tomcat/webapps/
-asdfasdfasdfasdfasdf
-asdf
+
+# Set the working directory (optional)
+WORKDIR /usr/local/tomcat
+
+#RUN cp -R webapps.dist/* webapps/
+#RUN cd webapps/
+RUN wget -O ROOT.war --user=admin --password=nexus http://15.206.147.153:8081/repository/sample-releases/org/example/devops/2.0.1/devops.war
+
+# If there are other setup commands, include them here
