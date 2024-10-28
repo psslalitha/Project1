@@ -1,6 +1,8 @@
 # Use a base image with Java runtime
 FROM openjdk:17-jdk-slim
 
+WORKDIR /app
+
 # Copy the WAR file to the container
 COPY target/devops.war /app/devops.war
 
