@@ -1,5 +1,5 @@
 # Start from a base image
-FROM tomcat:
+FROM tomcat:latest
 
 # Set the working directory (optional)
 WORKDIR /usr/local/tomcat
