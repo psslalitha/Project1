@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: s1
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: pro
   ports:
